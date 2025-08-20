@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="AlertPopView" customModule="EWA" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hFa-YT-6ki">
+                    <rect key="frame" x="10" y="234" width="355" height="199"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Text View" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MTZ-39-CEG">
+                            <rect key="frame" x="10" y="15" width="335" height="133"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VlP-Aw-THf">
+                            <rect key="frame" x="276" y="161" width="71" height="30"/>
+                            <color key="backgroundColor" red="0.35903465750000002" green="0.7231535912" blue="0.35992097849999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="4xY-XQ-SH6"/>
+                                <constraint firstAttribute="width" constant="71" id="LLC-KB-CJb"/>
+                            </constraints>
+                            <state key="normal" title="OK">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="okClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="MV1-LL-djw"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="MTZ-39-CEG" firstAttribute="leading" secondItem="hFa-YT-6ki" secondAttribute="leading" constant="10" id="4IA-Pd-vHB"/>
+                        <constraint firstItem="MTZ-39-CEG" firstAttribute="top" secondItem="hFa-YT-6ki" secondAttribute="top" constant="15" id="7dN-VJ-Epb"/>
+                        <constraint firstAttribute="height" constant="199" id="JrW-R7-c6K"/>
+                        <constraint firstAttribute="bottom" secondItem="MTZ-39-CEG" secondAttribute="bottom" constant="51" id="Rua-S2-1lQ"/>
+                        <constraint firstAttribute="trailing" secondItem="MTZ-39-CEG" secondAttribute="trailing" constant="10" id="fIl-oX-pZq"/>
+                        <constraint firstAttribute="bottom" secondItem="VlP-Aw-THf" secondAttribute="bottom" constant="8" id="ucg-lf-RcK"/>
+                        <constraint firstAttribute="trailing" secondItem="VlP-Aw-THf" secondAttribute="trailing" constant="8" id="vlv-VF-Kt2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.75" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hFa-YT-6ki" secondAttribute="trailing" constant="10" id="JJ8-Rm-lja"/>
+                <constraint firstItem="hFa-YT-6ki" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="dok-Ni-q1P"/>
+                <constraint firstItem="hFa-YT-6ki" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="fVf-BX-5xz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="dataTextView" destination="MTZ-39-CEG" id="0OR-fY-8oK"/>
+                <outlet property="okButton" destination="VlP-Aw-THf" id="bPO-FH-nQI"/>
+                <outlet property="outerView" destination="hFa-YT-6ki" id="iMg-vq-Baa"/>
+                <outlet property="viewHeight" destination="JrW-R7-c6K" id="nes-3e-sSO"/>
+            </connections>
+            <point key="canvasLocation" x="144.80000000000001" y="31.934032983508249"/>
+        </view>
+    </objects>
+</document>

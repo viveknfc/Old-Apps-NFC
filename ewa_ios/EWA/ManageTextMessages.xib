@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ManageTextMessages" customModule="EWA" customModuleProvider="target">
+            <connections>
+                <outlet property="AcknowledgementTextLabel" destination="UOh-re-fVw" id="95A-MH-LJk"/>
+                <outlet property="checkButton" destination="KUE-Nf-az0" id="HwA-xr-5rj"/>
+                <outlet property="firstNameTF" destination="Wcw-Rd-bnN" id="0E9-k4-m9a"/>
+                <outlet property="lastNameTF" destination="09X-h8-hHS" id="F7A-Nw-L05"/>
+                <outlet property="mobileNumderTF" destination="mKw-Yp-Y8d" id="f6q-t4-Opc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wcw-Rd-bnN" customClass="JVFloatLabeledTextField">
+                    <rect key="frame" x="20" y="64" width="374" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="WBu-xu-Vp9"/>
+                    </constraints>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartInsertDeleteType="no"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="keepBaseline" value="YES"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelTextColor">
+                            <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelActiveTextColor">
+                            <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                            <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="09X-h8-hHS" customClass="JVFloatLabeledTextField">
+                    <rect key="frame" x="20" y="124" width="374" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="FDj-jT-it9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartInsertDeleteType="no"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="keepBaseline" value="YES"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelTextColor">
+                            <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelActiveTextColor">
+                            <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                            <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mKw-Yp-Y8d" customClass="JVFloatLabeledTextField">
+                    <rect key="frame" x="20" y="184" width="374" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="1Kr-jF-GtS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="keepBaseline" value="YES"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelTextColor">
+                            <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelActiveTextColor">
+                            <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                            <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUE-Nf-az0">
+                    <rect key="frame" x="20" y="255" width="26" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="gTr-ly-kCt"/>
+                        <constraint firstAttribute="width" constant="26" id="vgV-Ge-Aim"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="checkBoxClicked:" destination="-1" eventType="touchUpInside" id="kHo-h6-jVV"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you want to get SMS" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOh-re-fVw">
+                    <rect key="frame" x="51" y="255" width="343" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="2zk-py-K97"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSc-NS-02a">
+                    <rect key="frame" x="95" y="326" width="224" height="42"/>
+                    <color key="backgroundColor" red="0.35903465750000002" green="0.7231535912" blue="0.35992097849999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="39w-PN-Zym"/>
+                        <constraint firstAttribute="width" constant="224" id="t2i-GK-kc2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                    <state key="normal" title="Update">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="updateClicked:" destination="-1" eventType="touchUpInside" id="DjY-iY-5Qt"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Wcw-Rd-bnN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="0Oi-eJ-ijT"/>
+                <constraint firstItem="sSc-NS-02a" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1rB-cW-cFj"/>
+                <constraint firstItem="09X-h8-hHS" firstAttribute="top" secondItem="Wcw-Rd-bnN" secondAttribute="bottom" constant="15" id="2Bc-6e-57S"/>
+                <constraint firstItem="mKw-Yp-Y8d" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="9rf-2Z-F4U"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UOh-re-fVw" secondAttribute="trailing" constant="20" id="DZm-kd-I8a"/>
+                <constraint firstItem="KUE-Nf-az0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Duo-tB-312"/>
+                <constraint firstItem="KUE-Nf-az0" firstAttribute="top" secondItem="mKw-Yp-Y8d" secondAttribute="bottom" constant="26" id="G2u-SE-7sI"/>
+                <constraint firstItem="sSc-NS-02a" firstAttribute="top" secondItem="UOh-re-fVw" secondAttribute="bottom" constant="50" id="HdE-Qw-d3R"/>
+                <constraint firstItem="mKw-Yp-Y8d" firstAttribute="top" secondItem="09X-h8-hHS" secondAttribute="bottom" constant="15" id="Rgb-5t-TMt"/>
+                <constraint firstItem="09X-h8-hHS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Vjq-Oa-FEh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mKw-Yp-Y8d" secondAttribute="trailing" constant="20" id="YVV-mY-JTV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="09X-h8-hHS" secondAttribute="trailing" constant="20" id="Z78-85-Mrj"/>
+                <constraint firstItem="UOh-re-fVw" firstAttribute="leading" secondItem="KUE-Nf-az0" secondAttribute="trailing" constant="5" id="jZx-Jy-ruc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Wcw-Rd-bnN" secondAttribute="trailing" constant="20" id="l83-wK-2E6"/>
+                <constraint firstItem="Wcw-Rd-bnN" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="oBI-T3-qpW"/>
+                <constraint firstItem="UOh-re-fVw" firstAttribute="top" secondItem="mKw-Yp-Y8d" secondAttribute="bottom" constant="26" id="vVG-F0-MiR"/>
+            </constraints>
+            <point key="canvasLocation" x="-13.043478260869566" y="8.7053571428571423"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="09X-h8-hHS">
+            <size key="intrinsicContentSize" width="73.5" height="31"/>
+        </designable>
+        <designable name="Wcw-Rd-bnN">
+            <size key="intrinsicContentSize" width="72" height="31"/>
+        </designable>
+        <designable name="mKw-Yp-Y8d">
+            <size key="intrinsicContentSize" width="102.5" height="31"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

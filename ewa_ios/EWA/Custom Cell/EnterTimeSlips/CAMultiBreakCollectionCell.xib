@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CAMultiBreakCollectionCell" id="gTV-IL-0wX" customClass="CAMultiBreakCollectionCell" customModule="EWA" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="115" height="435"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="115" height="435"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monday 04/12/2021" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dha-9i-zx8">
+                        <rect key="frame" x="1" y="1" width="113" height="55"/>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="55" id="FrA-0g-mwI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="78X-l9-CoA" customClass="BorderTextField" customModule="EWA" customModuleProvider="target">
+                        <rect key="frame" x="1" y="58" width="113" height="45"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="5Fs-Db-hCO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="clock.png"/>
+                        </userDefinedRuntimeAttributes>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Bnz-Q2-pNL" customClass="BorderTextField" customModule="EWA" customModuleProvider="target">
+                        <rect key="frame" x="1" y="105" width="113" height="45"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="rAx-PF-RcL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="clock.png"/>
+                        </userDefinedRuntimeAttributes>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="AtE-J4-mp4" customClass="BorderTextField" customModule="EWA" customModuleProvider="target">
+                        <rect key="frame" x="1" y="152" width="113" height="45"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="Hjb-8h-hCA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="clock.png"/>
+                        </userDefinedRuntimeAttributes>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="mfP-zk-O3d" customClass="BorderTextField" customModule="EWA" customModuleProvider="target">
+                        <rect key="frame" x="1" y="199" width="113" height="45"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="uSr-i3-HVq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="clock.png"/>
+                        </userDefinedRuntimeAttributes>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NYy-jo-niI" customClass="BorderTextField" customModule="EWA" customModuleProvider="target">
+                        <rect key="frame" x="1" y="246" width="113" height="45"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="pr2-Mg-PyF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="clock.png"/>
+                        </userDefinedRuntimeAttributes>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="MJx-kt-FTL" customClass="BorderTextField" customModule="EWA" customModuleProvider="target">
+                        <rect key="frame" x="1" y="293" width="113" height="45"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="kqG-io-xKF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="clock.png"/>
+                        </userDefinedRuntimeAttributes>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vJq-st-W7o" customClass="BorderTextField" customModule="EWA" customModuleProvider="target">
+                        <rect key="frame" x="1" y="340" width="113" height="45"/>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="gAE-Ka-bgg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vYf-IG-G1C" customClass="BorderTextField" customModule="EWA" customModuleProvider="target">
+                        <rect key="frame" x="1" y="387" width="113" height="45"/>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="B6W-oJ-czZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="dha-9i-zx8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="1" id="2pm-Wb-ZM5"/>
+                <constraint firstItem="NYy-jo-niI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="1" id="6QI-L5-ueQ"/>
+                <constraint firstItem="dha-9i-zx8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="1" id="86j-SY-Z2L"/>
+                <constraint firstItem="vYf-IG-G1C" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="1" id="8ey-J3-eSq"/>
+                <constraint firstAttribute="trailing" secondItem="vJq-st-W7o" secondAttribute="trailing" constant="1" id="ADW-aG-7MZ"/>
+                <constraint firstItem="AtE-J4-mp4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="1" id="BRB-Qa-a15"/>
+                <constraint firstItem="MJx-kt-FTL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="1" id="Dsa-eL-E9M"/>
+                <constraint firstAttribute="trailing" secondItem="NYy-jo-niI" secondAttribute="trailing" constant="1" id="Gli-Ij-VYJ"/>
+                <constraint firstItem="78X-l9-CoA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="1" id="Jb0-V1-AJ6"/>
+                <constraint firstItem="Bnz-Q2-pNL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="1" id="KzC-Uj-wFs"/>
+                <constraint firstAttribute="trailing" secondItem="vYf-IG-G1C" secondAttribute="trailing" constant="1" id="M1I-kb-CHM"/>
+                <constraint firstAttribute="trailing" secondItem="mfP-zk-O3d" secondAttribute="trailing" constant="1" id="MrC-VW-gXa"/>
+                <constraint firstAttribute="trailing" secondItem="78X-l9-CoA" secondAttribute="trailing" constant="1" id="RP3-EG-9c1"/>
+                <constraint firstItem="Bnz-Q2-pNL" firstAttribute="top" secondItem="78X-l9-CoA" secondAttribute="bottom" constant="2" id="Syx-d9-5CV"/>
+                <constraint firstItem="NYy-jo-niI" firstAttribute="top" secondItem="mfP-zk-O3d" secondAttribute="bottom" constant="2" id="Vv4-b0-79K"/>
+                <constraint firstItem="78X-l9-CoA" firstAttribute="top" secondItem="dha-9i-zx8" secondAttribute="bottom" constant="2" id="X0Q-1x-Ean"/>
+                <constraint firstItem="vYf-IG-G1C" firstAttribute="top" secondItem="vJq-st-W7o" secondAttribute="bottom" constant="2" id="XZ6-fY-OVa"/>
+                <constraint firstAttribute="trailing" secondItem="AtE-J4-mp4" secondAttribute="trailing" constant="1" id="Z1U-Vc-0Hn"/>
+                <constraint firstItem="AtE-J4-mp4" firstAttribute="top" secondItem="Bnz-Q2-pNL" secondAttribute="bottom" constant="2" id="acf-T9-UPP"/>
+                <constraint firstAttribute="trailing" secondItem="Bnz-Q2-pNL" secondAttribute="trailing" constant="1" id="gRR-Wp-nfI"/>
+                <constraint firstItem="vJq-st-W7o" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="1" id="gjy-jj-cvO"/>
+                <constraint firstItem="mfP-zk-O3d" firstAttribute="top" secondItem="AtE-J4-mp4" secondAttribute="bottom" constant="2" id="j8t-83-4aB"/>
+                <constraint firstItem="vJq-st-W7o" firstAttribute="top" secondItem="MJx-kt-FTL" secondAttribute="bottom" constant="2" id="kew-RI-wJ3"/>
+                <constraint firstAttribute="trailing" secondItem="dha-9i-zx8" secondAttribute="trailing" constant="1" id="om9-AU-VRk"/>
+                <constraint firstItem="mfP-zk-O3d" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="1" id="rtw-ey-wLZ"/>
+                <constraint firstAttribute="trailing" secondItem="MJx-kt-FTL" secondAttribute="trailing" constant="1" id="sbl-Js-dBW"/>
+                <constraint firstItem="MJx-kt-FTL" firstAttribute="top" secondItem="AtE-J4-mp4" secondAttribute="bottom" constant="96" id="vmY-DE-c9i"/>
+            </constraints>
+            <size key="customSize" width="110" height="434"/>
+            <connections>
+                <outlet property="dateLabel" destination="dha-9i-zx8" id="Nvj-3E-yd2"/>
+                <outlet property="endTimeTF" destination="MJx-kt-FTL" id="zHQ-lm-YDx"/>
+                <outlet property="endTimeTop" destination="vmY-DE-c9i" id="yUR-dn-yE2"/>
+                <outlet property="lunchMinTF" destination="vJq-st-W7o" id="eX9-Eg-YYm"/>
+                <outlet property="mealOut1TF" destination="Bnz-Q2-pNL" id="hKl-VW-Y8J"/>
+                <outlet property="mealOut2TF" destination="mfP-zk-O3d" id="uGO-oG-WgV"/>
+                <outlet property="mealReturn1TF" destination="AtE-J4-mp4" id="jey-Ek-E63"/>
+                <outlet property="mealReturn2TF" destination="NYy-jo-niI" id="alC-t8-UBj"/>
+                <outlet property="startTimeTF" destination="78X-l9-CoA" id="XYe-8m-J3K"/>
+                <outlet property="totalTF" destination="vYf-IG-G1C" id="PAU-En-vU5"/>
+            </connections>
+            <point key="canvasLocation" x="-173.18840579710147" y="13.058035714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="clock.png" width="25.531915664672852" height="25.531915664672852"/>
+    </resources>
+</document>

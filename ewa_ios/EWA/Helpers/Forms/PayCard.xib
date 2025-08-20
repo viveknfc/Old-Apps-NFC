@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PayCrad" customModule="EWA" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="750"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hR4-kE-Fs9">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="750"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7tI-9c-LLy">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="700"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="700" id="JwF-3Y-TCu"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S7d-VC-otr">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="700"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IMPORTANT NEWS REGARDING YOUR PAY CARD—PLEASE READ IMMEDIATELY" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7U-j0-X8X">
+                                    <rect key="frame" x="10" y="10" width="355" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="6Dm-6o-2FV"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Hfq-AL-VOW">
+                                    <rect key="frame" x="10" y="55" width="355" height="360"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="360" id="NBT-qE-fP6"/>
+                                    </constraints>
+                                    <string key="text">J. P. Morgan Chase is exiting the pay card market as of June 30, 2015. Pay earned from work days through Sunday June 21, 2015, will be deposited into the Chase pay card. The card will still be valid and you can continue to use it until all the value on it is expended. Customer service for the card will also continue to be available.
+To issue pay earned for work days beginning June 22, 2015, we are very pleased to announce that we have arranged to have Bank of America take over our pay cards. The Bank of America Pay Card, issued by Money Network, has a number of advantages over the Chase card. Attached is a brochure detailing the program, including their Money Network Paper Check option which comes with the Pay Card.
+To participate in the Bank of America Money Network Service, we will need to mail you a welcome kit with complete instructions on how to activate the card. When you receive it, please read and follow the instructions immediately to insure you receive your pay on the new card for work days beginning on June 22, 2015. Should you submit a late time slip, after our cut-off date of Tuesday, June 23, 2015, that pay will be accessible on the new Bank of America Money Network Pay Service.</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please click Here to acknowledge the change to the new Bank of America Money Network Pay Service." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CK8-hy-xsc" customClass="ActiveLabel" customModule="ActiveLabel">
+                                    <rect key="frame" x="10" y="425" width="355" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="Fpp-TB-fM9"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Hfq-AL-VOW" secondAttribute="trailing" constant="10" id="3Wu-iB-FpZ"/>
+                                <constraint firstItem="CK8-hy-xsc" firstAttribute="leading" secondItem="S7d-VC-otr" secondAttribute="leading" constant="10" id="689-HU-PgT"/>
+                                <constraint firstItem="CK8-hy-xsc" firstAttribute="top" secondItem="Hfq-AL-VOW" secondAttribute="bottom" constant="10" id="DWI-be-NtW"/>
+                                <constraint firstItem="d7U-j0-X8X" firstAttribute="leading" secondItem="S7d-VC-otr" secondAttribute="leading" constant="10" id="bjM-4W-tQr"/>
+                                <constraint firstAttribute="trailing" secondItem="CK8-hy-xsc" secondAttribute="trailing" constant="10" id="cnH-xR-4tN"/>
+                                <constraint firstItem="d7U-j0-X8X" firstAttribute="top" secondItem="S7d-VC-otr" secondAttribute="top" constant="10" id="qFk-SW-isJ"/>
+                                <constraint firstItem="Hfq-AL-VOW" firstAttribute="top" secondItem="d7U-j0-X8X" secondAttribute="bottom" constant="5" id="qwp-GV-AGm"/>
+                                <constraint firstAttribute="trailing" secondItem="d7U-j0-X8X" secondAttribute="trailing" constant="10" id="wTC-O7-32y"/>
+                                <constraint firstItem="Hfq-AL-VOW" firstAttribute="leading" secondItem="S7d-VC-otr" secondAttribute="leading" constant="10" id="xql-zA-wtT"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="7tI-9c-LLy" firstAttribute="centerX" secondItem="hR4-kE-Fs9" secondAttribute="centerX" id="4NG-en-0Ei"/>
+                        <constraint firstItem="7tI-9c-LLy" firstAttribute="top" secondItem="hR4-kE-Fs9" secondAttribute="top" id="91s-2b-wQi"/>
+                        <constraint firstAttribute="trailing" secondItem="S7d-VC-otr" secondAttribute="trailing" id="KDp-5u-ebx"/>
+                        <constraint firstItem="S7d-VC-otr" firstAttribute="top" secondItem="hR4-kE-Fs9" secondAttribute="top" id="Lkt-hS-9DK"/>
+                        <constraint firstItem="7tI-9c-LLy" firstAttribute="leading" secondItem="hR4-kE-Fs9" secondAttribute="leading" id="Z5d-Rj-BXo"/>
+                        <constraint firstAttribute="bottom" secondItem="7tI-9c-LLy" secondAttribute="bottom" id="cRf-sw-1ld"/>
+                        <constraint firstAttribute="trailing" secondItem="7tI-9c-LLy" secondAttribute="trailing" id="ca4-Et-RIl"/>
+                        <constraint firstAttribute="bottom" secondItem="S7d-VC-otr" secondAttribute="bottom" id="fCX-Wl-xIj"/>
+                        <constraint firstItem="S7d-VC-otr" firstAttribute="leading" secondItem="hR4-kE-Fs9" secondAttribute="leading" id="p5H-cB-qXx"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="hR4-kE-Fs9" secondAttribute="bottom" id="10K-aD-QTZ"/>
+                <constraint firstItem="hR4-kE-Fs9" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="4R4-m3-RWB"/>
+                <constraint firstItem="hR4-kE-Fs9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Oxv-nV-5CL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hR4-kE-Fs9" secondAttribute="trailing" id="hCQ-Xr-RUd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="payGuradLabel" destination="CK8-hy-xsc" id="CkU-JT-bvx"/>
+            </connections>
+            <point key="canvasLocation" x="119" y="79"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="CK8-hy-xsc">
+            <size key="intrinsicContentSize" width="580" height="15"/>
+        </designable>
+    </designables>
+</document>
