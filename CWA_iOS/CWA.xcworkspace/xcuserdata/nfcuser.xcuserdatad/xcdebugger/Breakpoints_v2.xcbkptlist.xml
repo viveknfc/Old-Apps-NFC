@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "B48807FE-1B63-427B-9D0B-E47801C8E80D"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "452B1B53-37A4-46E6-B0C3-64F4B82F35A0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CWA/E-Register/E_BreakTimeVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "685"
+            endingLineNumber = "685"
+            landmarkName = "addTimes(start:end:min:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AAD7FA35-EDAF-4C91-B766-18628EC9998C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CWA/VCs/SigninViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "239"
+            endingLineNumber = "239"
+            landmarkName = "getresponse(response:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AAD7FA35-EDAF-4C91-B766-18628EC9998C - f5b537a7441a6a2c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CWA.SigninViewController.getresponse(response: Swift.AnyObject) -&gt; ()"
+                  moduleName = "CWA"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nfcuser/Documents/GitHub/IntelliStaff_iOS/CWA_iOS/CWA/VCs/SigninViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "239"
+                  endingLineNumber = "239"
+                  offsetFromSymbolStart = "6901">
+               </Location>
+               <Location
+                  uuid = "AAD7FA35-EDAF-4C91-B766-18628EC9998C - f5b537a7441a6a2c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CWA.SigninViewController.getresponse(response: Swift.AnyObject) -&gt; ()"
+                  moduleName = "CWA"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nfcuser/Documents/GitHub/IntelliStaff_iOS/CWA_iOS/CWA/VCs/SigninViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "239"
+                  endingLineNumber = "239"
+                  offsetFromSymbolStart = "4960">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "328AF825-C325-4FF8-B27F-8DEFEBD90836"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CWA/VCs/BaseViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "976"
+            endingLineNumber = "976"
+            landmarkName = "addDivisionNameOnTop()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

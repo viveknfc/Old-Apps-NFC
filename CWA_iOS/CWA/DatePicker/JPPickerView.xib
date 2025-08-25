@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Cb3-KV-1Tu" customClass="JPPickerView" customModule="CWA" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EcJ-im-8r7">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.21444242294273971" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="bgButtonTapped:" destination="Cb3-KV-1Tu" eventType="touchUpInside" id="THP-Pk-nCT"/>
+                    </connections>
+                </button>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eaz-ok-nfe">
+                    <rect key="frame" x="0.0" y="220" width="320" height="260"/>
+                    <subviews>
+                        <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OjB-GR-r6s">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </pickerView>
+                        <datePicker opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="yAj-kG-1Kx">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <date key="date" timeIntervalSinceReferenceDate="526998780.39621598">
+                                <!--2017-09-13 12:33:00 +0000-->
+                            </date>
+                            <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                                <!--1970-01-01 11:00:00 +0000-->
+                            </date>
+                        </datePicker>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ypm-Hr-iy8">
+                            <rect key="frame" x="0.0" y="216" width="320" height="44"/>
+                            <subviews>
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywD-Ei-vzc">
+                                    <rect key="frame" x="8" y="6" width="63" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Cancel"/>
+                                    <connections>
+                                        <action selector="cancelBtnTapped:" destination="Cb3-KV-1Tu" eventType="touchUpInside" id="STf-zL-idm"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5b-bA-owc" customClass="ShadowButton" customModule="CWA" customModuleProvider="target">
+                                    <rect key="frame" x="93" y="5" width="134" height="35"/>
+                                    <color key="backgroundColor" red="0.26274509800000001" green="0.5450980392" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="134" id="dkt-ld-mSn"/>
+                                        <constraint firstAttribute="height" constant="35" id="rfa-ZU-Axz"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                    <state key="normal" title="DONE">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="5zI-4u-pra"/>
+                                <constraint firstAttribute="bottom" secondItem="K5b-bA-owc" secondAttribute="bottom" constant="4" id="Cmt-Y7-TBT"/>
+                                <constraint firstItem="K5b-bA-owc" firstAttribute="centerX" secondItem="Ypm-Hr-iy8" secondAttribute="centerX" id="xUO-gq-X7y"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="yAj-kG-1Kx" firstAttribute="leading" secondItem="eaz-ok-nfe" secondAttribute="leading" id="0ti-Po-rbG"/>
+                        <constraint firstAttribute="trailing" secondItem="yAj-kG-1Kx" secondAttribute="trailing" id="9T3-on-9HX"/>
+                        <constraint firstItem="OjB-GR-r6s" firstAttribute="top" secondItem="eaz-ok-nfe" secondAttribute="top" id="OXg-Rm-V27"/>
+                        <constraint firstItem="yAj-kG-1Kx" firstAttribute="top" secondItem="eaz-ok-nfe" secondAttribute="top" id="TXc-6U-eLA"/>
+                        <constraint firstAttribute="trailing" secondItem="Ypm-Hr-iy8" secondAttribute="trailing" id="VqQ-Ms-LDg"/>
+                        <constraint firstItem="Ypm-Hr-iy8" firstAttribute="leading" secondItem="eaz-ok-nfe" secondAttribute="leading" id="Wyx-De-4Gx"/>
+                        <constraint firstItem="Ypm-Hr-iy8" firstAttribute="top" secondItem="yAj-kG-1Kx" secondAttribute="bottom" id="cHq-Sp-RXe"/>
+                        <constraint firstItem="OjB-GR-r6s" firstAttribute="leading" secondItem="eaz-ok-nfe" secondAttribute="leading" id="imY-b2-Fu7"/>
+                        <constraint firstItem="Ypm-Hr-iy8" firstAttribute="top" secondItem="OjB-GR-r6s" secondAttribute="bottom" id="kgf-sq-ejx"/>
+                        <constraint firstAttribute="trailing" secondItem="OjB-GR-r6s" secondAttribute="trailing" id="tzY-Dl-HGZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="EcJ-im-8r7" firstAttribute="leading" secondItem="Cb3-KV-1Tu" secondAttribute="leading" id="1e3-K3-jcw"/>
+                <constraint firstAttribute="bottom" secondItem="EcJ-im-8r7" secondAttribute="bottom" id="4As-ag-WVH"/>
+                <constraint firstAttribute="bottom" secondItem="eaz-ok-nfe" secondAttribute="bottom" id="CnP-xv-GXe"/>
+                <constraint firstItem="eaz-ok-nfe" firstAttribute="leading" secondItem="Cb3-KV-1Tu" secondAttribute="leading" id="ULF-YO-8dI"/>
+                <constraint firstAttribute="trailing" secondItem="eaz-ok-nfe" secondAttribute="trailing" id="hFn-pT-9uD"/>
+                <constraint firstItem="eaz-ok-nfe" firstAttribute="top" secondItem="Cb3-KV-1Tu" secondAttribute="top" constant="220" id="jLB-Rt-tkp"/>
+                <constraint firstItem="EcJ-im-8r7" firstAttribute="top" secondItem="Cb3-KV-1Tu" secondAttribute="top" id="ox9-2G-9sI"/>
+                <constraint firstAttribute="trailing" secondItem="EcJ-im-8r7" secondAttribute="trailing" id="zBV-xy-Lvk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgButton" destination="EcJ-im-8r7" id="B5A-ZR-uiF"/>
+                <outlet property="bottomView" destination="Ypm-Hr-iy8" id="9oP-Eh-slq"/>
+                <outlet property="cancelButton" destination="ywD-Ei-vzc" id="2ng-jr-Qcf"/>
+                <outlet property="dataPickerView" destination="OjB-GR-r6s" id="Vcp-fB-A58"/>
+                <outlet property="doneButton" destination="K5b-bA-owc" id="tLD-k7-I9k"/>
+                <outlet property="dtPickerView" destination="yAj-kG-1Kx" id="Tjn-pc-uFL"/>
+                <outlet property="pickerBgTopConstraint" destination="jLB-Rt-tkp" id="gPO-Z4-k3f"/>
+                <outlet property="pickerBgView" destination="eaz-ok-nfe" id="mPb-Lv-dQd"/>
+            </connections>
+            <point key="canvasLocation" x="-136" y="64.767616191904054"/>
+        </view>
+    </objects>
+</document>

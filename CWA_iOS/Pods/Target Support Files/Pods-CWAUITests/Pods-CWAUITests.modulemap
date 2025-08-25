@@ -1,0 +1,6 @@
+framework module Pods_CWAUITests {
+  umbrella header "Pods-CWAUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

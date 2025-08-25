@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CalendarView" customModule="CWA" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZv-jZ-xy5">
+                    <rect key="frame" x="1" y="0.0" width="319" height="300"/>
+                    <color key="backgroundColor" white="0.48790147569444442" alpha="0.3924711044520548" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="bgButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="zAF-cJ-8X2"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rcV-dO-ERN">
+                    <rect key="frame" x="0.0" y="41" width="320" height="259"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ys2-rV-6fn" customClass="FSCalendar">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="259"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="259" id="iCC-aK-AAT"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="placeholderType">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="firstWeekday">
+                                    <integer key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Ys2-rV-6fn" secondAttribute="trailing" id="Gg8-Gf-o1z"/>
+                        <constraint firstItem="Ys2-rV-6fn" firstAttribute="leading" secondItem="rcV-dO-ERN" secondAttribute="leading" id="Ggv-dq-y9R"/>
+                        <constraint firstItem="Ys2-rV-6fn" firstAttribute="top" secondItem="rcV-dO-ERN" secondAttribute="top" id="OHU-ex-CXI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="rcV-dO-ERN" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="3yj-Ex-id3"/>
+                <constraint firstItem="zZv-jZ-xy5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="1" id="BZS-S4-ONs"/>
+                <constraint firstItem="zZv-jZ-xy5" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="F1F-oF-EHr"/>
+                <constraint firstItem="zZv-jZ-xy5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="GlU-hO-gFY"/>
+                <constraint firstItem="zZv-jZ-xy5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="1" id="P0T-j1-ZJY"/>
+                <constraint firstItem="rcV-dO-ERN" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="YBI-1X-O3E"/>
+                <constraint firstItem="rcV-dO-ERN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dIZ-nn-krG"/>
+                <constraint firstItem="zZv-jZ-xy5" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="dVR-L1-Gap"/>
+                <constraint firstItem="zZv-jZ-xy5" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="deY-8Y-Rl7"/>
+                <constraint firstItem="zZv-jZ-xy5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="h50-7d-QSF"/>
+                <constraint firstItem="zZv-jZ-xy5" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="lZ6-Sz-kJp"/>
+                <constraint firstItem="rcV-dO-ERN" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="41" id="sH5-rl-oqF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bgButton" destination="zZv-jZ-xy5" id="4Hr-Q1-FQq"/>
+                <outlet property="calendar" destination="Ys2-rV-6fn" id="coF-hl-96G"/>
+                <outlet property="calendarBGView" destination="rcV-dO-ERN" id="36V-yo-eKP"/>
+                <outlet property="calendarBottomConstraint" destination="3yj-Ex-id3" id="dcw-gE-lri"/>
+                <outlet property="calendarTopConstraint" destination="sH5-rl-oqF" id="X3B-hJ-1k4"/>
+            </connections>
+            <point key="canvasLocation" x="-649.60000000000002" y="-120.53973013493254"/>
+        </view>
+    </objects>
+</document>
