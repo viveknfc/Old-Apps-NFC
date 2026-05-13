@@ -928,7 +928,7 @@ class BaseTableViewController: UITableViewController {
             //    if let version = RestAPI.displayVersion // Bundle.main.infoDictionary?["CFBundleVersion"] as? String {
             //userid as String
             let versionns = RestAPI.displayVersion
-            let params :[String:String] = ["CWAAppVersion": versionns,"CWAMobileOSType" : "iOS"]
+            let params :[String:String] = ["CWAAppVersion": versionns,"CWAMobileOSType" : "IOS"]
             print("viv the version param is ",params)
             RestAPI.getAppCurrentVersion(self, params: params, method: "POST", accessToken: "", acces: true, callBack: getServerResponse(response:)) //viv- the API will trigger the Call back Method
             // }

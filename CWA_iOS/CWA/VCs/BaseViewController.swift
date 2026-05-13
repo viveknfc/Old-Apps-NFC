@@ -1231,7 +1231,7 @@ class BaseViewController: UIViewController,UIGestureRecognizerDelegate, UINaviga
             //  if let version = Bundle.main.infoDictionary?["CFBundleVersion"] as? String {
             //userid as String
             let versionnss = RestAPI.displayVersion
-            let params :[String:String] = ["CWAAppVersion": versionnss,"CWAMobileOSType" : "iOS"]
+            let params :[String:String] = ["CWAAppVersion": versionnss,"CWAMobileOSType" : "IOS"]
             print("vivek the api version from basevc is ",params)
             RestAPI.getAppCurrentVersion(self, params: params, method: "POST", accessToken: "", acces: true, callBack: getServerResponse(response:))
             
