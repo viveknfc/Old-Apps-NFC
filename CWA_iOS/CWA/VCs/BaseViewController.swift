@@ -1283,45 +1283,93 @@ class BaseViewController: UIViewController,UIGestureRecognizerDelegate, UINaviga
                 self.showAlertIfRequired(object)
                 
                 
-            }else if object["MessageStatus"].intValue == 0{
-                self.removeDivisionBarView()
-                
-                var message = object["Message"].stringValue
-                
-                if message.count == 0 {
-                    message = "New version of the app is available in the app store please update"//"There is some error"
-                }
-                
-                let alert = UIAlertController(title:"Update Available", message:message, preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
-                    switch action.style{
-                    case .default:
-                        print("default")
-                        let url = URL(string: "https://apps.apple.com/us/app/client-mobile-access/id1349663964")
-                        if #available(iOS 10.0, *) {
-                            UIApplication.shared.open(url!, options: [:], completionHandler: nil)
-                        } else {
-                            UIApplication.shared.openURL(url!)
-                        }
-                    case .cancel:
-                        print("cancel")
-                        
-                    case .destructive:
-                        print("destructive")
-                        
-                        
-                    }}))
-                self.present(alert, animated: true, completion: nil)
-                
-                
-                //self.showCustomAlert(Title: "", attMessage: NSAttributedString(), message: message, okBtnTitle: "OK", cancelBtnTitle: "", type: Danger_Text, isAttributed: false)
-                
-            }else{
-                
-                self.showAlertIfRequired(object)
-                
-                
             }
+//            else if object["MessageStatus"].intValue == 0{
+//                self.removeDivisionBarView()
+//                
+//                var message = object["Message"].stringValue
+//                
+//                if message.count == 0 {
+//                    message = "New version of the app is available in the app store please update"//"There is some error"
+//                }
+//                
+//                let alert = UIAlertController(title:"Update Available", message:message, preferredStyle: .alert)
+//                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+//                    switch action.style{
+//                    case .default:
+//                        print("default")
+//                        let url = URL(string: "https://apps.apple.com/us/app/client-mobile-access/id1349663964")
+//                        if #available(iOS 10.0, *) {
+//                            UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+//                        } else {
+//                            UIApplication.shared.openURL(url!)
+//                        }
+//                    case .cancel:
+//                        print("cancel")
+//                        
+//                    case .destructive:
+//                        print("destructive")
+//                        
+//                        
+//                    }}))
+//                self.present(alert, animated: true, completion: nil)
+//                
+//                
+//                //self.showCustomAlert(Title: "", attMessage: NSAttributedString(), message: message, okBtnTitle: "OK", cancelBtnTitle: "", type: Danger_Text, isAttributed: false)
+//                
+//            }
+            
+//            else{
+//
+//                self.showAlertIfRequired(object)
+//                
+//                
+//            }
+            
+        else if object["MessageStatus"].intValue == 0{
+            self.removeDivisionBarView()
+            
+            var message = object["Message"].stringValue
+            if message.count == 0 {
+                message = "New version of the app is available in the app store please update"
+            }
+            
+            let appStoreURL = object["App_Link"].stringValue  // ← FROM SERVER RESPONSE
+            print("appURL:------- \(appStoreURL)")
+            let alert = UIAlertController(title:"Update Available", message:message, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                switch action.style{
+                case .default:
+                    print("default")
+                    guard !appStoreURL.isEmpty, let url = URL(string: appStoreURL) else {
+                        print("Invalid or missing AppStoreURL in response")
+                        return
+                    }
+                    if #available(iOS 10.0, *) {
+                        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                    } else {
+                        UIApplication.shared.openURL(url)
+                    }
+                case .cancel:
+                   print("cancel")
+
+               case .destructive:
+                   print("destructive")
+
+
+               }}))
+           self.present(alert, animated: true, completion: nil)
+
+
+           //self.showCustomAlert(Title: "", attMessage: NSAttributedString(), message: message, okBtnTitle: "OK", cancelBtnTitle: "", type: Danger_Text, isAttributed: false)
+
+       }
+        else{
+
+            self.showAlertIfRequired(object)
+
+
+        }
         }
         
     }

@@ -27,7 +27,7 @@ class RestAPI: NSObject {
     
     //https://apps.tempositions.com/TemPositionsCMAAPIDEV/CWAAPI/ - old Dev URL
  
-    static var BaseUrl = DevelopmentURL
+    static var BaseUrl = ProductionURL
     
     static var ProductionAppVersion = "\(Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String)"
     static var DevelopmentAppVersion = "1.0.55"
