@@ -1012,14 +1012,14 @@ class BaseTableViewController: UITableViewController {
                 
                 var message = object["Message"].stringValue
                 if message.count == 0 {
-                    message = "New version of the app is available in the app store please update"
+                    message = "Update CMA mobile app version to continue"
                 }
                 
                 let appStoreURL = object["App_Link"].stringValue  // ← FROM SERVER RESPONSE
                 print("appURL:------- \(appStoreURL)")
                 
                 let alert = UIAlertController(title:"Update Available", message:message, preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                alert.addAction(UIAlertAction(title: "UPDATE", style: .default, handler: { action in
                     switch action.style{
                     case .default:
                         print("default")

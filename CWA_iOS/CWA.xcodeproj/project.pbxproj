@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -31,6 +31,9 @@
 		3381CF5A1FFD223A00204FC0 /* StepCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3381CF561FFD223A00204FC0 /* StepCollectionViewFlowLayout.swift */; };
 		339D9EDD200E3EA1006E3F8E /* icons8-calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 339D9EDC200E3EA0006E3F8E /* icons8-calendar.png */; };
 		33D2B01920235385008D23F1 /* EditTimeSlipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D2B01820235385008D23F1 /* EditTimeSlipViewController.swift */; };
+		447E621A2FBC3F6900C9A5BF /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 447E62192FBC3F6900C9A5BF /* GoogleMaps */; };
+		447E621D2FBC403E00C9A5BF /* GooglePlaces in Frameworks */ = {isa = PBXBuildFile; productRef = 447E621C2FBC403E00C9A5BF /* GooglePlaces */; };
+		447E621F2FBC403E00C9A5BF /* GooglePlacesSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 447E621E2FBC403E00C9A5BF /* GooglePlacesSwift */; };
 		489719508D70582AFF26871E /* Pods_CWAUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B5EF7EDC595297D43117D18 /* Pods_CWAUITests.framework */; };
 		56005D78210AE9EA003A8271 /* EmpEvaluationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56005D77210AE9EA003A8271 /* EmpEvaluationTableViewCell.swift */; };
 		560215D320FDC8B300172852 /* HospitalityGroupTSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560215D220FDC8B300172852 /* HospitalityGroupTSViewController.swift */; };
@@ -562,9 +565,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				447E621A2FBC3F6900C9A5BF /* GoogleMaps in Frameworks */,
 				C2D1D66F2C00A3AA00848414 /* CoreTelephony.framework in Frameworks */,
 				C2D1D6722C00A3AC00848414 /* MapKit.framework in Frameworks */,
+				447E621D2FBC403E00C9A5BF /* GooglePlaces in Frameworks */,
 				94A72D68076FCB08669F90E8 /* Pods_CWA.framework in Frameworks */,
+				447E621F2FBC403E00C9A5BF /* GooglePlacesSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1141,7 +1147,6 @@
 				566AFA601FA9B80F009983FE /* Resources */,
 				56C739A0202ADF7E00B8B860 /* ShellScript */,
 				9B36A597EFB14AE295409FE4 /* [CP] Embed Pods Frameworks */,
-				BDE329923FA19794B1A25E30 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1242,6 +1247,11 @@
 				Base,
 			);
 			mainGroup = 566AFA591FA9B80E009983FE;
+			packageReferences = (
+				447E62172FBC3D2000C9A5BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				447E62182FBC3D9D00C9A5BF /* XCRemoteSwiftPackageReference "ios-maps-sdk" */,
+				447E621B2FBC403400C9A5BF /* XCRemoteSwiftPackageReference "ios-places-sdk" */,
+			);
 			productRefGroup = 566AFA631FA9B80F009983FE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1396,18 +1406,13 @@
 				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
 				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/FirebaseCore/FirebaseCore.framework",
-				"${BUILT_PRODUCTS_DIR}/FirebaseCoreExtension/FirebaseCoreExtension.framework",
 				"${BUILT_PRODUCTS_DIR}/FirebaseCoreInternal/FirebaseCoreInternal.framework",
-				"${BUILT_PRODUCTS_DIR}/FirebaseCrashlytics/FirebaseCrashlytics.framework",
 				"${BUILT_PRODUCTS_DIR}/FirebaseInstallations/FirebaseInstallations.framework",
-				"${BUILT_PRODUCTS_DIR}/FirebaseSessions/FirebaseSessions.framework",
 				"${BUILT_PRODUCTS_DIR}/FloatRatingView/FloatRatingView.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleDataTransport/GoogleDataTransport.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/KMPlaceholderTextView/KMPlaceholderTextView.framework",
 				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
-				"${BUILT_PRODUCTS_DIR}/PromisesSwift/Promises.framework",
 				"${BUILT_PRODUCTS_DIR}/RecaptchaInterop/RecaptchaInterop.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
@@ -1419,18 +1424,13 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCoreExtension.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCoreInternal.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCrashlytics.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseInstallations.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseSessions.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FloatRatingView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleDataTransport.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KMPlaceholderTextView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Promises.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RecaptchaInterop.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
@@ -1440,26 +1440,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CWA/Pods-CWA-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BDE329923FA19794B1A25E30 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CWA/Pods-CWA-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/GoogleMaps/GoogleMapsResources.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/GooglePlaces/GooglePlacesResources.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMapsResources.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacesResources.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CWA/Pods-CWA-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E1020CCE7B961189589CC449 /* [CP] Check Pods Manifest.lock */ = {
@@ -1851,7 +1831,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1864,7 +1845,7 @@
 				CODE_SIGN_ENTITLEMENTS = CWA/CWA.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0;
+				CURRENT_PROJECT_VERSION = 2.0;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 9W2GMX4LS3;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1876,14 +1857,17 @@
 				);
 				INFOPLIST_FILE = CWA/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}\"",
 					/usr/lib/swift,
 					"$(SDKROOT)/usr/lib/swift",
 				);
-				MARKETING_VERSION = 3.7.2;
+				MARKETING_VERSION = 3.7.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tempositions.cwa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1901,7 +1885,7 @@
 				CODE_SIGN_ENTITLEMENTS = CWA/CWA.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0;
+				CURRENT_PROJECT_VERSION = 2.0;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 9W2GMX4LS3;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1913,14 +1897,17 @@
 				);
 				INFOPLIST_FILE = CWA/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}\"",
 					/usr/lib/swift,
 					"$(SDKROOT)/usr/lib/swift",
 				);
-				MARKETING_VERSION = 3.7.2;
+				MARKETING_VERSION = 3.7.3;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tempositions.cwa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1940,7 +1927,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5H3X3V9Z4M;
 				INFOPLIST_FILE = CWATests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nfcsolutions.CWATests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -1958,7 +1949,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5H3X3V9Z4M;
 				INFOPLIST_FILE = CWATests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nfcsolutions.CWATests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -1975,7 +1970,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9W2GMX4LS3;
 				INFOPLIST_FILE = CWAUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nfcsolutions.CWAUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -1992,7 +1991,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9W2GMX4LS3;
 				INFOPLIST_FILE = CWAUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nfcsolutions.CWAUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -2041,6 +2044,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		447E62172FBC3D2000C9A5BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.13.0;
+			};
+		};
+		447E62182FBC3D9D00C9A5BF /* XCRemoteSwiftPackageReference "ios-maps-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-maps-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.13.0;
+			};
+		};
+		447E621B2FBC403400C9A5BF /* XCRemoteSwiftPackageReference "ios-places-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-places-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.13.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		447E62192FBC3F6900C9A5BF /* GoogleMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 447E62182FBC3D9D00C9A5BF /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
+			productName = GoogleMaps;
+		};
+		447E621C2FBC403E00C9A5BF /* GooglePlaces */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 447E621B2FBC403400C9A5BF /* XCRemoteSwiftPackageReference "ios-places-sdk" */;
+			productName = GooglePlaces;
+		};
+		447E621E2FBC403E00C9A5BF /* GooglePlacesSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 447E621B2FBC403400C9A5BF /* XCRemoteSwiftPackageReference "ios-places-sdk" */;
+			productName = GooglePlacesSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 566AFA5A1FA9B80E009983FE /* Project object */;
 }
